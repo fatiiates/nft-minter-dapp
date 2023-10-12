@@ -1,0 +1,21 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:next/recommended",
+    "next/core-web-vitals",
+    "prettier" 
+  ],
+  "plugins": ["react", "next"],
+  "settings": {
+    "react": {
+      "version": "detect" 
+    }
+  },
+  "rules": {
+    // Add your project-specific ESLint rules here
+    // Example:
+    // "no-console": "error",
+  }
+}
