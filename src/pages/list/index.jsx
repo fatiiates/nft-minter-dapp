@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { Grid, Skeleton, Typography, Box } from "@mui/material";
 import NFTCard from "@components/NFT/card";
-import Pagination from "@components/Pagination";
+import Pagination from "@components/pagination";
 import { LISTING_METHODS } from "@constants";
-import ListingMethods from "@components/ListingMethods";
+import ListingMethods from "@components/listingMethods";
 import Head from "@components/NFT/head";
 import axios from "axios";
 

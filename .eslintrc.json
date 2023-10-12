@@ -9,6 +9,9 @@
   ],
   "plugins": ["react", "next"],
   "settings": {
+    "next": {
+      "rootDir": "./src/"
+    },
     "react": {
       "version": "detect" 
     }
