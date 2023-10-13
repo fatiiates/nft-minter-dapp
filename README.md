@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Application Documentation
+
+This documentation provides an overview of how to create and run a basic Next.js application. It also includes information on configuring essential environment variables.
+
+## Prerequisites
+
+Before you start building a Next.js application, make sure you have the following installed on your system:
+
+- Node.js: Download and install Node.js from [nodejs.org](https://nodejs.org/).
 
 ## Getting Started
 
-First, run the development server:
+1. **Create a New Next.js App**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   Take this repository to your local:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```shell
+   git clone https://github.com/fatiiates/nft-minter-dapp my-nextjs-app
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+   Replace \`my-nextjs-app\` with your desired project name.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Navigate to the Project Directory**
+
+   Change to the newly created project directory:
+
+   ```shell
+   cd my-nextjs-app
+   ```
+
+3. **Environment Variables Configuration**
+
+   Next.js applications often require the use of environment variables for various settings, such as API keys, database URLs, and more. To configure environment variables:
+
+   - Create a \`.env.local\` file from `.env-example` at the root of your project directory.
+   - Add your environment variables to this file in the following format:
+
+
+   Make sure to replace \`your-api-key\` and \`your-database-url\` with your actual values.
+
+4. **Start the Development Server**
+
+   To run your Next.js app in development mode, use the following command:
+
+   ```shell
+   yarn dev
+   ```
+
+   This command will start the development server, and your app will be available at \`http://localhost:3000\`.
+
+
+6. **Build and Deploy**
+
+   When you're ready to deploy your app, ensure that you set up environment variables in your deployment environment as well.
+
+   - Build your app:
+
+     ```shell
+     yarn build
+     ```
+
+   - Start your app in production mode:
+
+     ```shell
+     npm start
+     ```
+
+## Folder Structure
+
+Here's an overview of the project's folder structure:
+
+- \`pages/\`: Contains your application's routes. Each \`.js\` file in this directory becomes a route.
+- \`public/\`: Static assets such as images, fonts, and other files that can be accessed directly.
+- \`styles/\`: CSS styles or style modules for your application.
+- \`components/\`: Custom React components you create for your app.
+
+## Customization
+
+You can customize your Next.js app by modifying the following files:
+
+- \`next.config.js\`: Configuration options for Next.js.
+- \`package.json\`: Dependency and script configuration.
+- \`styles/index.css\`: Global CSS styles for your app.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+For more detailed information and advanced topics, you can refer to the official Next.js documentation:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Additional Resources
 
-## Deploy on Vercel
+Here are some additional resources to help you get started with Next.js:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js GitHub Repository](https://github.com/vercel/next.js)
+- [Next.js GitHub Examples](https://github.com/vercel/next.js/tree/canary/examples)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Happy coding with Next.js!
